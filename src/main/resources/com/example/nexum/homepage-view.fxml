@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nexum.homepageController">
+
+    <children>
+        <BorderPane prefHeight="720.0" prefWidth="1200.0">
+            <left>
+                <VBox fx:id="sideMenu" prefHeight="720.0" prefWidth="67.0" styleClass="sideMenu" BorderPane.alignment="CENTER">
+                </VBox>
+            </left>
+         <center>
+            <ScrollPane prefHeight="615.0" prefWidth="1034.0" BorderPane.alignment="CENTER" />
+         </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
