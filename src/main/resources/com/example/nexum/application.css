@@ -1,0 +1,13 @@
+.root {
+    -fx-background-color: white;
+}
+
+.sideMenu {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 15, 0, 3, 3);
+    -fx-border-radius: 0 12 12 0;     /* top-left, top-right, bottom-right, bottom-left */
+    -fx-background-radius: 0 12 12 0; /* same order */
+    -fx-padding: 15;
+}
+
+
