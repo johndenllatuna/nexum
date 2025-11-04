@@ -24,33 +24,38 @@
             <TextField layoutX="126.0" layoutY="230.0" prefHeight="38.0" prefWidth="340.0" promptText="Email" styleClass="primary-border" />
             <PasswordField layoutX="125.0" layoutY="275.0" prefHeight="38.0" prefWidth="340.0" promptText="Password" styleClass="primary-border" />
 
-            <Button layoutX="125.0" layoutY="338.0" prefHeight="38.0" prefWidth="340.0" style="-fx-background-color: black;" styleClass="primary-button" text="Login" textFill="WHITE">
+            <Button fx:id="signInBtn" layoutX="125.0" layoutY="338.0" onAction="#handleSignInClick" prefHeight="38.0" prefWidth="340.0" style="-fx-background-color: black;" styleClass="primary-button" text="Login" textFill="WHITE">
               <font>
                 <Font name="Arial" size="12.0" />
               </font></Button>
 
-            <Button fx:id="forgotPasswordBtn" layoutX="232.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleForgotPasswordClick" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Forgot Password?">
+            <Button fx:id="forgotPasswordBtn" layoutX="232.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleForgotPasswordClick" prefHeight="26.0" prefWidth="127.0" style="-fx-background-color: transparent;" text="Forgot Password?" underline="true">
               <font>
                 <Font name="Arial" size="12.0" />
               </font>
             </Button>
-            <ImageView fitHeight="192.0" fitWidth="328.0" layoutX="-50.0" layoutY="-51.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="102.0" fitWidth="143.0" layoutX="135.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
               <image>
                 <Image url="@image/logo.png" />
               </image>
             </ImageView>
             <Label layoutX="324.0" layoutY="407.0" />
             <Label layoutX="285.0" layoutY="439.0" text="or" />
-            <Label layoutX="269.0" layoutY="471.0" text="Sign Up" underline="true">
-              <font>
-                <Font name="Arial" size="12.0" />
-              </font>
-            </Label>
             <ImageView fitHeight="46.0" fitWidth="45.0" layoutX="269.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
               <image>
                 <Image url="@image/logo%20nexum.jpg" />
               </image>
             </ImageView>
+                  <Button fx:id="signUpBtn" layoutX="262.0" layoutY="467.0" mnemonicParsing="false" onAction="#handleSignUpClick" style="-fx-background-color: transparent;" text="Sign Up" underline="true">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="256.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@754608e6-110f-4fd8-b548-9d1651dc9d6d.jfif" />
+                     </image>
+                  </ImageView>
           </children>
         </AnchorPane>
       </center>
